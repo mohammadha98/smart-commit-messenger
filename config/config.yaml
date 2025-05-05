@@ -1,0 +1,22 @@
+# Smart Commit Messenger Configuration
+
+github:
+  repository: "username/repository"
+  branch: "main"
+  # Number of commits to analyze
+  commit_limit: 5
+
+telegram:
+  channel_id: "@your_channel_name"
+
+schedule:
+  # Interval in minutes
+  interval_minutes: 15
+  # Whether to run continuously
+  continuous: true
+
+ai:
+  # Model to use for generating descriptions
+  model: "gpt-3.5-turbo"
+  # Maximum tokens for the response
+  max_tokens: 500
